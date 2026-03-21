@@ -8,22 +8,28 @@ import {
 } from "@mui/icons-material";
 import Image from "next/image";
 
-import {PROFILE} from "../constants";
+import {PROFILE} from "../common/constants";
 
 const Hero = () => {
   return (
     <section className="my-16">
       <div className="flex md:flex-row flex-col justify-between gap-8">
-        <div className="flex gap-2 items-start flex-col text-2xl">
+        <div className="flex gap-2 flex-col text-2xl">
           <div className="flex gap-2">
             <WavingHand className="wave text-yellow-400" />
-            <span className="mr-2">Hello I'm</span>
+            <span className="mr-2">Hello I&apos;m</span>
           </div>
           <span className="font-bold md:text-8xl text-6xl">{PROFILE.NAME}</span>
           <span className="text-subheading text-2xl mt-2 text-blue-400">
             {PROFILE.ROLE}
           </span>
-          <div className="flex gap-4 items-baseline my-4">
+          <span className="text-subheading text-base mt-1">
+            {PROFILE.DESCRIPTION}
+          </span>
+          <span className="text-subheading text-sm my-2 text-gray-400">
+            Languages:{" "}{PROFILE.LANGUAGES.join(" | ")}
+          </span>
+          <div className="flex gap-4 items-baseline my-4 mt-auto">
             <a className="flex gap-2 items-center bg-button-primary text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors self-stretch"
               href={PROFILE.RESUME_URL}
               download="Resume.pdf"

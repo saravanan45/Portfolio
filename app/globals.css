@@ -10,7 +10,7 @@
 
 /* Dark theme */
 :root.dark {
-  --background: #181A1A;
+  --background: #181a1a;
   --foreground: #ededed;
   --button-primary: #3b82f6;
   --button-secondary: #4b5563;
@@ -19,7 +19,7 @@
 /* Fallback for OS dark mode preference */
 @media (prefers-color-scheme: dark) {
   :root:not(.light) {
-    --background: #181A1A;
+    --background: #181a1a;
     --foreground: #ededed;
     --button-primary: #3b82f6;
     --button-secondary: #4b5563;
@@ -71,4 +71,28 @@ body {
 .wave {
   animation: wave 1s ease-in-out infinite;
   transform-origin: 70% 70%;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.glass-label {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 4px 12px;
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
 }

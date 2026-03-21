@@ -6,7 +6,7 @@ const Header = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <header className={`flex items-center justify-between p-4 ${theme === "dark" ? "bg-white/5" : "bg-black/5"} backdrop-blur-md rounded-md my-4`}>
+    <header className={`flex items-center justify-between p-4 glass-card my-4`}>
       <h1 className="font-bold">Saravanan</h1>
       <nav className="hidden md:flex">
         <ul className="flex space-x-4 text-gray-400">

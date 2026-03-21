@@ -10,12 +10,12 @@ import TechnicalSkills from "@/components/TechnicalSkills";
 export default function Home() {
   return (
     <main className="h-screen w-screen">
-      <section className="md:mx-100 mx-4">
+      <section className="md:mx-[25%] mx-4">
         <Header />
         <Hero />
-        {/*<Summary />
+        <Summary />
         <TechnicalSkills />
-        <Experience />
+        {/*<Experience />
         <Education />
         <Projects />
         <Connect /> */}
