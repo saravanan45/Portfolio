@@ -6,19 +6,21 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Summary from "@/components/Summary";
 import TechnicalSkills from "@/components/TechnicalSkills";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="h-screen w-screen">
+    <main className="h-screen w-full">
       <section className="md:mx-[25%] mx-4">
         <Header />
         <Hero />
         <Summary />
         <TechnicalSkills />
-        {/*<Experience />
+        <Experience />
         <Education />
-        <Projects />
-        <Connect /> */}
+        {/*<Projects />*/}
+        <Connect /> 
+        <Footer />
       </section>
     </main>
   );

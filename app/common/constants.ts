@@ -53,7 +53,7 @@ const FRONTEND = [
   {
     name: "Electron JS",
     experticeLevel: "Intermediate",
-  }
+  },
 ];
 const BACKEND = [
   {
@@ -71,7 +71,7 @@ const BACKEND = [
   {
     name: "Spring Boot",
     experticeLevel: "Intermediate",
-  }
+  },
 ];
 const DATABASES = [
   {
@@ -103,8 +103,161 @@ const TOOLS_PLATFORMS = [
   {
     name: "JIRA",
     experticeLevel: "Advanced",
-  }
+  },
 ];
+
+const EXPERIENCE: Array<{
+  company: string;
+  role: string;
+  duration: string;
+  responsibilities: Array<{ header?: string; details: string[] }>;
+  skills?: string[];
+}> = [
+  {
+    company: "Walmart Global Tech India",
+    role: "Senior Software Engineer",
+    duration: "July 2022 - Present",
+    responsibilities: [
+      {
+        header:
+          "Item & Offer – Catalog Microservice (Seller Center Application)",
+        details: [
+          "Implemented the Product Tax Code feature and multi-market capabilities including Convert to WFS for Canada and Mexico.",
+          "Contributed to i18n support for Mexico, Chile, and Canada markets to enable localized experiences.",
+          "Built and maintained E2E automation using Playwright to improve release quality and reduce regressions.",
+          "Collaborated with US market and Product teams to deliver cross-functional, multi-market features.",
+        ],
+      },
+      {
+        header: "Vajra – Internal Platform for On-Demand Test Environments",
+        details: [
+          "Led front-end restructuring to align with UX and accessibility (A11Y) standards and redesigned workflows to improve onboarding and developer productivity.",
+          "Designed and implemented a Micro-Frontend architecture and performance dashboard; improved application performance by 20%.",
+          "Built reusable UI components and developed backend services using Java and REST APIs to support provisioning workflows.",
+          "Wrote unit tests (RTL, Jest), conducted code reviews, mentored engineers, and supported internal teams using the platform.",
+        ],
+      },
+    ],
+    skills: [
+      "React",
+      "JavaScript",
+      "Playwright",
+      "Java",
+      "Spring Boot",
+      "Docker",
+      "Kubernetes",
+      "Git",
+      "JIRA",
+      "Lerna",
+      "Jest",
+      "React Testing Library",
+    ],
+  },
+  {
+    company: "Informatica Business Solutions Private Limited",
+    role: "Software Engineer",
+    duration: "June 2021 - July 2022",
+    responsibilities: [
+      {
+        details: [
+          "Enhanced UI components (Button, Tooltip, Splitter, Cards) using React and JavaScript, ensuring compliance with accessibility (A11Y) standards and improving overall usability.",
+          "Collaborated closely with UX teams to implement and refine design updates across the shared component library, maintaining consistency and design integrity.",
+          "Wrote comprehensive unit tests using Jest, integration tests, and visual regression tests with CodeceptJS to ensure cross-browser compatibility and reliability.",
+          "Served as a primary point of contact for teams integrating the design system, providing technical guidance, accessibility best practices, and implementation support.",
+        ],
+      },
+    ],
+    skills: [
+      "React",
+      "JavaScript",
+      "Jest",
+      "Cypress",
+      "Accessibility (A11Y)",
+      "Git",
+      "JIRA",
+    ],
+  },
+  {
+    company: "United Online Software Development Private Limited",
+    role: "Software Engineer",
+    duration: "July 2018 - June 2021",
+    responsibilities: [
+      {
+        header: "MagicJack for Business",
+        details: [
+          "Developed responsive web and cross-platform desktop applications using React.js, JavaScript, and Electron.js, ensuring seamless user experience across environments.",
+          "Contributed to core product modules including Call Block, Auto Attendant, and Virtual Fax, enhancing feature reliability and user engagement within the web application.",
+          "Designed and implemented key desktop features such as contact list management, dialer functionality, and recent calls interface in the Electron application.",
+          "Wrote comprehensive unit tests using Jest and integration tests using Cypress to improve application stability and reduce regressions.",
+          "Participated in peer code reviews, promoting clean code practices, maintainability, and adherence to engineering standards.",
+        ],
+      },
+    ],
+    skills: [
+      "React",
+      "JavaScript",
+      "ElectronJS",
+      "Jest",
+      "Cypress",
+      "Git",
+      "JIRA",
+      "Java",
+      "Spring Boot",
+    ],
+  },
+];
+
+const EDUCATION = [
+  {
+    degree: "Bachelor of Engineering (B.E.,)",
+    major: "Computer Science and Engineering",
+    institution: "Government College of Technology",
+    location: "Coimbatore, Tamil Nadu, India",
+    duration: "July 2014 - May 2018",
+  },
+];
+
+const CONNECT_INFO = [
+  {
+    name: "LinkedIn",
+    url: LINKEDIN_URL,
+  },
+  {
+    name: "GitHub",
+    url: GITHUB_URL,
+  },
+  {
+    name: "Email",
+    url: `mailto:${EMAIL}`,
+  },
+];
+
+const HEADER_LINKS = [
+  {
+    name: "Summary",
+    href: "#summary",
+  },
+  {
+    name: "Skills",
+    href: "#skills",
+  },
+  {
+    name: "Experience",
+    href: "#experience",
+  },
+  {
+    name: "Education",
+    href: "#education",
+  },
+  // {
+  //   name: "Projects",
+  //   href: "#projects",
+  // },
+  {
+    name: "Connect",
+    href: "#connect",
+  },
+]
 
 export const PROFILE = {
   NAME,
@@ -121,6 +274,10 @@ export const PROFILE = {
   BACKEND,
   DATABASES,
   TOOLS_PLATFORMS,
+  EXPERIENCE,
+  EDUCATION,
+  CONNECT_INFO,
+  HEADER_LINKS,
 };
 
 export const COLORS = [

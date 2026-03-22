@@ -15,7 +15,7 @@ const Hero = () => {
     <section className="my-16">
       <div className="flex md:flex-row flex-col justify-between gap-8">
         <div className="flex gap-2 flex-col text-2xl">
-          <div className="flex gap-2">
+          <div className="flex gap-2 flex-wrap items-center">
             <WavingHand className="wave text-yellow-400" />
             <span className="mr-2">Hello I&apos;m</span>
           </div>
@@ -29,7 +29,7 @@ const Hero = () => {
           <span className="text-subheading text-sm my-2 text-gray-400">
             Languages:{" "}{PROFILE.LANGUAGES.join(" | ")}
           </span>
-          <div className="flex gap-4 items-baseline my-4 mt-auto">
+          <div className="flex gap-4 items-baseline my-4 mt-auto flex-wrap">
             <a className="flex gap-2 items-center bg-button-primary text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors self-stretch"
               href={PROFILE.RESUME_URL}
               download="Resume.pdf"
@@ -53,7 +53,7 @@ const Hero = () => {
           alt="Saravanan"
           width={250}
           height={300}
-          className="mt-4 rounded-lg shadow-lg"
+          className="mt-4 rounded-lg shadow-lg self-center md:self-start object-cover h-80 w-60"
         />
       </div>
     </section>

@@ -1,19 +1,26 @@
+import { PROFILE } from "../common/constants";
+
 const Education = () => {
   return (
-    <section className="education">
-      <h2>Education</h2>
-      <div className="education-item">
-        <h3>Bachelor of Science in Computer Science</h3>
-        <p>University of Technology, City, Country</p>
-        <p>Graduated: May 2020</p>
-      </div>
-      <div className="education-item">
-        <h3>Master of Science in Software Engineering</h3>
-        <p>Tech University, City, Country</p>
-        <p>Graduated: May 2022</p>
-      </div>
+    <section className="my-16 scroll-mt-20" id="education">
+      <h2 className="text-4xl font-bold my-4">Education</h2>
+      {PROFILE.EDUCATION.map((edu, index) => (
+        <div key={index} className="glass-card my-6 p-6">
+          <div className="flex items-center justify-between gap-4 flex-wrap">
+            <p className="text-2xl font-bold text-primary-header">{edu.institution}</p>
+            <span className="glass-label">{edu.duration}</span>
+          </div>
+          <h3 className="flex gap-2 text-secondary flex-wrap mt-4">
+            <span>{edu.degree}</span>
+            <span>({edu.major})</span>
+          </h3>
+          <div className="mt-2 text-tertiary text-sm">
+            {edu.location}
+          </div>
+        </div>
+      ))}
     </section>
   );
-}
+};
 
 export default Education;
