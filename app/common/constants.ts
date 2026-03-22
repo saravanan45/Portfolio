@@ -3,6 +3,20 @@ const EMAIL = "saravananrohit1505@gmail.com";
 const GITHUB_URL = "https://github.com/saravanan45";
 const LINKEDIN_URL = "https://www.linkedin.com/in/saravanan-s-0297b9147/";
 const RESUME_URL = "/files/Resume.pdf";
+const HERO_LINKS = [
+  {
+    name: "mail",
+    url: `mailto:${EMAIL}`,
+  },
+  {
+    name: "github",
+    url: GITHUB_URL,
+  },
+  {
+    name: "linkedin",
+    url: LINKEDIN_URL,
+  },
+];
 const ROLE = "Full Stack Developer | Front End Enthusiast | Tech Explorer";
 const LANGUAGES = ["JavaScript", "React", "Typescript", "NodeJS", "Express JS"];
 const DESCRIPTION = "Specialized in React and Node JS development.";
@@ -265,6 +279,7 @@ export const PROFILE = {
   GITHUB_URL,
   LINKEDIN_URL,
   RESUME_URL,
+  HERO_LINKS,
   ROLE,
   LANGUAGES,
   DESCRIPTION,

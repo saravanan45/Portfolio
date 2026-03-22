@@ -37,15 +37,19 @@ const Hero = () => {
               <span className="text-base">Resume</span>
               <Download />
             </a>
-            <a className="bg-button-secondary px-4 py-2 rounded-md" href={`mailto:${PROFILE.EMAIL}`} target="_blank" rel="noopener noreferrer">
-              <Mail />
-            </a>
-            <a className="bg-button-secondary px-4 py-2 rounded-md" href={PROFILE.GITHUB_URL} target="_blank" rel="noopener noreferrer">
-              <GitHub />
-            </a>
-            <a className="bg-button-secondary px-4 py-2 rounded-md" href={PROFILE.LINKEDIN_URL} target="_blank" rel="noopener noreferrer">
-              <LinkedIn />
-            </a>
+            {PROFILE.HERO_LINKS.map((link) => (
+              <a
+                key={link.name}
+                className="bg-button-secondary px-4 py-2 rounded-md"
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {link.name === "mail" && <Mail />}
+                {link.name === "github" && <GitHub />}
+                {link.name === "linkedin" && <LinkedIn />}
+              </a>
+            ))}
           </div>
         </div>
         <Image
