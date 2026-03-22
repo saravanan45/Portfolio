@@ -12,7 +12,7 @@ import {PROFILE} from "../common/constants";
 
 const Hero = () => {
   return (
-    <section className="my-16">
+    <section className="my-4">
       <div className="flex md:flex-row flex-col justify-between gap-8">
         <div className="flex gap-2 flex-col text-2xl">
           <div className="flex gap-2 flex-wrap items-center">
