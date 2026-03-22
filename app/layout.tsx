@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-title: "Saravanan Muthu | Full Stack Engineer",
+title: "Saravanan S | Full Stack Engineer",
 description:
   "Full Stack Engineer with expertise in React, Node.js, and scalable web applications. Passionate about building high-performance, user-centric products.",
 };
