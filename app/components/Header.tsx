@@ -45,7 +45,7 @@ const Header = () => {
     <>
       {!menuOpen ? (
         <header
-          className={`${headerBaseClass} ${scrolled ? scrolledClass : "glass-card"} scroll-mt-20`}
+          className={`${headerBaseClass} ${scrolled ? scrolledClass : "glass-card"} scroll-mt-20 flex flex-wrap gap-4 justify-between items-center`}
           id="header"
         >
           {headerTitle}
@@ -65,7 +65,7 @@ const Header = () => {
         </header>
       ) : (
         <div
-          className={`sticky right-4 top-2 z-20 flex flex-wrap gap-2 rounded-md p-4 ${scrolled ? scrolledClass : "glass-card"}`}
+          className={`sticky right-4 top-2 z-20 flex flex-wrap gap-2 rounded-md p-4 ${scrolled ? scrolledClass : "glass-card"} `}
         >
           <div className="flex items-center justify-between w-full">
             <h3 className="text-lg font-bold">{headerTitle}</h3>

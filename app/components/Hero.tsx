@@ -9,19 +9,23 @@ import {
 import Image from "next/image";
 
 import {PROFILE} from "../common/constants";
+import useHeroHook from "../hooks/useHeroHook";
 
 const Hero = () => {
+  const { currentRole } = useHeroHook();
+
   return (
-    <section className="my-4">
-      <div className="flex md:flex-row flex-col justify-between gap-8">
+    <section className="my-8">
+      <div className="flex md:flex-row flex-col justify-between gap-8 flex-wrap items-center lg:items-start">
         <div className="flex gap-2 flex-col text-2xl">
           <div className="flex gap-2 flex-wrap items-center">
             <WavingHand className="wave text-yellow-400" />
             <span className="mr-2">Hello I&apos;m</span>
           </div>
           <span className="font-bold md:text-8xl text-6xl">{PROFILE.NAME}</span>
-          <span className="text-subheading text-2xl mt-2 text-blue-400">
-            {PROFILE.ROLE}
+            <span className="text-subheading text-2xl mt-2 text-blue-400">
+              <span>{currentRole}</span>
+              <span className="cursor">|</span>
           </span>
           <span className="text-subheading text-base mt-1">
             {PROFILE.DESCRIPTION}

@@ -17,7 +17,7 @@ const HERO_LINKS = [
     url: LINKEDIN_URL,
   },
 ];
-const ROLE = "Full Stack Developer | Front End Enthusiast | Tech Explorer";
+const ROLE = ["FullStack Developer", "FrontEnd Developer", "MERN Stack Developer"];
 const LANGUAGES = ["JavaScript", "React", "Typescript", "NodeJS", "Express JS"];
 const DESCRIPTION = "Specialized in React and Node JS development.";
 const SUMMARY =
