@@ -15,7 +15,7 @@ const Hero = () => {
   const { currentRole } = useHeroHook();
 
   return (
-    <section className="my-8">
+    <section className="my-8" id="hero">
       <div className="flex md:flex-row flex-col justify-between gap-8 flex-wrap items-center lg:items-start">
         <div className="flex gap-2 flex-col text-2xl">
           <div className="flex gap-2 flex-wrap items-center">

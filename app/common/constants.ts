@@ -272,6 +272,8 @@ const HEADER_LINKS = [
     href: "#connect",
   },
 ]
+// hrefs for header links should match the ids of the corresponding sections in the page
+const HEADER_SECTIONS = ["summary", "skills", "experience", "education", "connect"];
 
 export const PROFILE = {
   NAME,
@@ -293,6 +295,7 @@ export const PROFILE = {
   EDUCATION,
   CONNECT_INFO,
   HEADER_LINKS,
+  HEADER_SECTIONS,
 };
 
 export const COLORS = [
