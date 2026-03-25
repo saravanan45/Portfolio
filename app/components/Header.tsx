@@ -3,6 +3,7 @@ import { LightMode, DarkMode, Menu, Close } from "@mui/icons-material";
 import { useTheme } from "../hooks/useTheme";
 import { PROFILE } from "../common/constants";
 import { header_Wrapper } from "@/common/helper";
+import ProgressBar from "../common/ProgressBar";
 import { useEffect, useMemo, useState } from "react";
 import useIOHook from "@/hooks/useIOHook";
 
@@ -53,9 +54,10 @@ const Header = () => {
 
   return (
     <>
+      <ProgressBar />
       {!menuOpen ? (
         <header
-          className={`${headerBaseClass} ${scrolled ? scrolledClass : "glass-card"} scroll-mt-20 flex flex-wrap gap-4 justify-between items-center`}
+          className={`${headerBaseClass} ${scrolled ? scrolledClass : "glass-card"} scroll-mt-20 mt-2 flex flex-wrap gap-4 justify-between items-center`}
           id="header"
         >
           {headerTitle}
@@ -75,7 +77,7 @@ const Header = () => {
         </header>
       ) : (
         <div
-          className={`sticky right-4 top-0 z-20 flex flex-wrap gap-2 rounded-md p-4 ${scrolled ? scrolledClass : "glass-card"} `}
+          className={`sticky right-4 top-0 z-20 flex flex-wrap gap-2 mt-2 rounded-md p-4 ${scrolled ? scrolledClass : "glass-card"} `}
         >
           <div className="flex items-center justify-between w-full">
             {headerTitle}
