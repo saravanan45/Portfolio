@@ -17,8 +17,8 @@ export default function Home() {
         <Summary />
         <TechnicalSkills />
         <Experience />
+        <Projects />
         <Education />
-        {/*<Projects />*/}
         <Connect /> 
         <Footer />
       </section>

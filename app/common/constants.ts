@@ -1,8 +1,10 @@
+import { Langar } from "next/font/google";
+
 const NAME = "Saravanan";
 const EMAIL = "saravananrohit1505@gmail.com";
 const GITHUB_URL = "https://github.com/saravanan45";
 const LINKEDIN_URL = "https://www.linkedin.com/in/saravanan-s-0297b9147/";
-const RESUME_URL = "/files/Resume.pdf";
+const RESUME_URL = "/files/Saravanan.pdf";
 const HERO_LINKS = [
   {
     name: "mail",
@@ -17,19 +19,24 @@ const HERO_LINKS = [
     url: LINKEDIN_URL,
   },
 ];
-const ROLE = ["FullStack Developer", "FrontEnd Developer", "MERN Stack Developer"];
-const LANGUAGES = ["JavaScript", "React", "Typescript", "NodeJS", "Express JS"];
-const DESCRIPTION = "Specialized in React and Node JS development.";
+const ROLE = [
+  "Senior Software Engineer",
+  "FullStack Developer",
+  "FrontEnd Developer",
+  "MERN Stack Developer",
+];
+const LANGUAGES = ["JavaScript", "React.js", "Typescript", "Next.js", "Node.js", "Express.js"];
+const DESCRIPTION = "Specialized in React.js and Node.js development.";
 const SUMMARY =
-  "Senior Software Engineer with 7.9 years of experience building web applications using React.js and JavaScript. Experienced in Micro Frontend architecture, design systems, and accessible UI development. Skilled in building backend services with Node.js, Express.js, and PostgreSQL, designing RESTful APIs and delivering end-to-end solutions with a focus on code quality and performance.";
+  "Senior Software Engineer with 8 years of experience building scalable web applications and backend services using React.js, TypeScript, JavaScript, Node.js and modern web technologies. Experienced in frontend architecture, micro-frontends, REST APIs, distributed systems, performance optimization, accessibility, testing, and enterprise-scale application development.";
 const SKILLS = ["FRONTEND", "BACKEND", "DATABASES", "TOOLS & PLATFORMS"];
 const FRONTEND = [
   {
-    name: "JavaScript",
+    name: "React.js",
     experticeLevel: "Expert",
   },
   {
-    name: "React",
+    name: "JavaScript",
     experticeLevel: "Expert",
   },
   {
@@ -40,6 +47,10 @@ const FRONTEND = [
     name: "TypeScript",
     experticeLevel: "Advanced",
   },
+  {
+    name: "Next.js",
+    experticeLevel: "Advanced",
+  }, 
   {
     name: "HTML",
     experticeLevel: "Expert",
@@ -72,11 +83,11 @@ const FRONTEND = [
 const BACKEND = [
   {
     name: "Node.js",
-    experticeLevel: "Expert",
+    experticeLevel: "Advanced",
   },
   {
     name: "Express",
-    experticeLevel: "Expert",
+    experticeLevel: "Advanced",
   },
   {
     name: "Java",
@@ -140,14 +151,15 @@ const EXPERIENCE: Array<{
         header:
           "Item & Offer – Catalog Microservice (Seller Center Application) & Vajra – Internal Platform for On-Demand Test Environments",
         details: [
-          "Designed and developed scalable frontend systems using React and TypeScript for high-impact business applications.",
-          "Led adoption of micro-frontend architecture (Module Federation) enabling independent deployments and scalability.",
-          "Owned features end-to-end including design, development, testing, deployment, and production support.",
-          "Improved application performance by ~20% using code splitting, lazy loading, and rendering optimizations.",
-          "Built and integrated REST APIs, handling authentication, error handling, and async workflows.",
-          "Collaborated with product managers, designers, and backend engineers to deliver intuitive UI/UX.",
-          "Led testing strategy (unit, integration, E2E) improving release quality and confidence.",
-          "Mentored engineers and conducted code reviews to maintain high engineering standards.",
+          "Developed scalable Seller Center applications using React.js and TypeScript for international Walmart markets.",
+          "Built Product Tax Code feature for CA/MX markets, reducing incorrect tax submissions and item creation failures.",
+          "Implemented localization and internationalization support for US, Canada, Mexico, and Chile markets.",
+          "Migrated Vajra platform from standalone architecture to Micro Frontend architecture integrated with Walmart DX platform, increasing adoption by ~20%.",
+          "Built reusable enterprise-grade Table component used across multiple Walmart teams with advanced filtering, sorting, pagination, customizable columns, and server/client-side filtering capabilities.",
+          "Migrated Vajra application from legacy UX to modern Figma-based UX designs.",
+          "Developed backend APIs using Java (Springboot) for HBR creation, deletion, and paginated retrieval.",
+          "Wrote unit/integration tests using Jest and React Testing Library.",
+          "Participated in code reviews, deployment orchestration, and mentored junior engineers.",
         ],
       },
     ],
@@ -166,6 +178,10 @@ const EXPERIENCE: Array<{
       "Lerna",
       "Jest",
       "React Testing Library",
+      "Micro Frontends",
+      "Monorepo",
+      "NX",
+      "i18n & l10n",
     ],
   },
   {
@@ -174,11 +190,12 @@ const EXPERIENCE: Array<{
     duration: "June 2021 - July 2022",
     responsibilities: [
       {
+        header: "Droplets UI platform",
         details: [
-          "Built reusable UI component library (similar to Material UI / Ant Design) used across teams.",
-          "Developed accessible (WCAG-compliant) components improving usability and consistency.",
-          "Enabled scalable UI development through component-driven architecture and design systems.",
-          "Collaborated with multiple teams to ensure adoption and extensibility of UI platform.",
+          "Worked on Droplets, Informatica's reusable enterprise UI component library used across multiple product teams.",
+          "Developed reusable and accessible React components following WCAG standards.",
+          "Improved component usability, customization, and developer experience across teams.",
+          "Contributed to frontend architecture, performance optimization, bug fixes, and unit testing.",
         ],
       },
     ],
@@ -200,11 +217,11 @@ const EXPERIENCE: Array<{
       {
         header: "MagicJack for Business",
         details: [
-          "Developed end-to-end B2B web applications including product purchase flows and admin dashboards.",
-          "Built enterprise features such as Call Block, Auto Attendant, Virtual Fax.",
-          "Implemented session management, auto-logout, and secure workflows.",
-          "Contributed to Electron desktop application (dialer, call history, themes).",
-          "Integrated APIs and ensured performance across browsers and devices.",
+          "Developed enterprise admin dashboards and customer-facing applications using React.js.",
+          "Worked on interactive workflows including Call Block, Auto Attendant, and Virtual Fax features.",
+          "Built Electron.js desktop application features including dial pad, call history, recent calls, and theme-based UI.",
+          "Implemented secure session handling and inactivity-based auto logout functionality.",
+          "Integrated REST APIs and delivered responsive cross-browser compatible user experiences.",
         ],
       },
     ],
@@ -222,6 +239,27 @@ const EXPERIENCE: Array<{
     ],
   },
 ];
+
+const PROJECTS = [
+  {
+    header: "Inventory Management System (Microservices Architecture)",
+    languages: ["Node.js", "Express.js", "Kafka", "PostgreSQL", "Docker", "Ollama (Qwen3 model)"],
+    description: [
+      "Designed and developed backend services from scratch using Node.js and Express.js, initially following monolithic architecture and later migrating to microservices architecture for improved scalability and maintainability.",
+      "Implemented REST APIs, Docker containerization using Docker Compose, and integrated Kafka for asynchronous event-driven communication between services.",
+      "Introduced an AI-powered chatbot in the frontend using Ollama with the Qwen3 model to help users query order details and refund policy information through conversational interactions.",
+    ]
+  }, 
+  {
+    header: "Personal Portfolio Website",
+    languages: ["Next.js", "React", "Tailwind CSS", "Vercel"],
+    description: [
+      "Built a responsive portfolio website using Next.js and Tailwind CSS to showcase my projects, experience, and skills.",
+      "Implemented dark/light theme and cross-browser compatibility.",
+      "Deployed the website on Vercel for fast performance and global accessibility.",
+    ]
+  }
+]
 
 const EDUCATION = [
   {
@@ -262,20 +300,27 @@ const HEADER_LINKS = [
     href: "#experience",
   },
   {
+    name: "Projects",
+    href: "#projects",
+  },
+  {
     name: "Education",
     href: "#education",
   },
-  // {
-  //   name: "Projects",
-  //   href: "#projects",
-  // },
   {
     name: "Connect",
     href: "#connect",
   },
-]
+];
 // hrefs for header links should match the ids of the corresponding sections in the page
-const HEADER_SECTIONS = ["summary", "skills", "experience", "education", "connect"];
+const HEADER_SECTIONS = [
+  "summary",
+  "skills",
+  "experience",
+  "education",
+  "projects",
+  "connect",
+];
 
 export const PROFILE = {
   NAME,
@@ -294,6 +339,7 @@ export const PROFILE = {
   DATABASES,
   TOOLS_PLATFORMS,
   EXPERIENCE,
+  PROJECTS,
   EDUCATION,
   CONNECT_INFO,
   HEADER_LINKS,
