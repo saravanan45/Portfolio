@@ -28,7 +28,7 @@ const ROLE = [
 const LANGUAGES = ["JavaScript", "React.js", "Typescript", "Next.js", "Node.js", "Express.js"];
 const DESCRIPTION = "Specialized in React.js and Node.js development.";
 const SUMMARY =
-  "Senior Software Engineer with 8 years of experience building scalable web applications and backend services using React.js, TypeScript, JavaScript, Node.js and modern web technologies. Experienced in frontend architecture, micro-frontends, REST APIs, distributed systems, performance optimization, accessibility, testing, and enterprise-scale application development.";
+  "Senior Software Engineer with <EXPERIENCE_YEARS> of experience building scalable web applications and backend services using React.js, TypeScript, JavaScript, Node.js and modern web technologies. Experienced in frontend architecture, micro-frontends, REST APIs, distributed systems, performance optimization, accessibility, testing, and enterprise-scale application development.";
 const SKILLS = ["FRONTEND", "BACKEND", "DATABASES", "TOOLS & PLATFORMS"];
 const FRONTEND = [
   {
@@ -321,6 +321,8 @@ const HEADER_SECTIONS = [
   "projects",
   "connect",
 ];
+
+export const WORK_START_DATE = new Date("2018-07-02");
 
 export const PROFILE = {
   NAME,
